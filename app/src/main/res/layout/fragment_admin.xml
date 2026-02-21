@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/dark_blue"
+    android:padding="16dp">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logoutFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="Log Out"
+        android:src="@drawable/baseline_exit_to_app_24"
+        android:tint="@color/white"
+        app:backgroundTint="@android:color/transparent"
+        android:alpha="0.7"
+        android:elevation="8dp" />
+
+    <TextView
+        android:id="@+id/bookingsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Bookings"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/light_blue"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookingsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/availabilityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Stylist Availability"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/light_blue"/>
+
+    <Spinner
+        android:id="@+id/stylistSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:spinnerMode="dropdown"
+        android:background="@color/light_blue"
+        android:popupBackground="@color/light_blue"/>
+
+    <Button
+        android:id="@+id/addSickDayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Add Sick Day"
+        android:background="@drawable/custom_btn_user" />
+
+    <Button
+        android:id="@+id/addHolidayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Add Holiday"
+        android:background="@drawable/custom_btn_user"/>
+
+    <Button
+        android:id="@+id/cancelSickDayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel Sick Day"
+        android:background="@drawable/custom_btn_user"/>
+
+    <Button
+        android:id="@+id/cancelHolidayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel Holiday"
+        android:background="@drawable/custom_btn_user"/>
+</LinearLayout>
